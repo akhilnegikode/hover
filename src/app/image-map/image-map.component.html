@@ -1,0 +1,8 @@
+<div id="image-container">
+    <img [src]="src">
+    <div class="coordinates-container">
+        <div class="area" [ngStyle]="getCoordinateStyle(coordinate)" [title]="coordinate.name"
+            *ngFor="let coordinate of coordinates" (click)="onAreaClick(coordinate)">
+        </div>
+    </div>
+</div>
